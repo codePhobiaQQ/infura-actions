@@ -5,10 +5,10 @@ dotenv.config();
 const host = 'ipfs.infura.io'
 const port = '5001'
 
-const CID = 'QmPoFzmpj5B8afnUSWRNBCQh8mzoifFZtehbXjoEU9Rz2j'
+const apiKey = process.env.INFURA_API_KEY;
+const apiSecretKey = process.env.INFURA_API_SECRET_KEY;
 
-const projectId = process.env.INFURA_API_KEY;
-const projectSecret = process.env.INFURA_API_SECRET_KEY;
+const CID = 'QmPoFzmpj5B8afnUSWRNBCQh8mzoifFZtehbXjoEU9Rz2j'
 
 const cat = async () => {
   const params = new URLSearchParams({arg: CID});
@@ -16,13 +16,13 @@ const cat = async () => {
 
   const response = await axios.post(
     url,
-    null, // по curl тело пустое → null
+    null,
     {
       auth: {
-        username: projectId,
-        password: projectSecret,
+        username: apiKey,
+        password: apiSecretKey,
       },
-      responseType: "arraybuffer", // бинарный ответ
+      responseType: "arraybuffer",
     }
   );
 
