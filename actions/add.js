@@ -14,9 +14,9 @@ const apiSecretKey = process.env.INFURA_API_SECRET_KEY;
 // const filePath = './public/data.json';
 
 // +
-// const filePath = './public/data.sol';
+const filePath = './public/data.sol';
 
-const filePath = './public/image.png';
+// const filePath = './public/image.png';
 
 const add = async () => {
   if (!fs.existsSync(filePath)) {

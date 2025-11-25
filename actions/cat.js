@@ -11,7 +11,7 @@ const apiSecretKey = process.env.INFURA_API_SECRET_KEY;
 // const cid = 'QmPoFzmpj5B8afnUSWRNBCQh8mzoifFZtehbXjoEU9Rz2j'
 
 // +
-const cid = 'QmQVJmUrpJJQheXu9nF7GYQmeo1itaWyAYZSRLtoVJeUhA'
+const cid = 'QmPZ4iepw1hnTpw2VBExRf8x4bvh8fmD8aWnby6U3TxW9t'
 
 // +
 // const cid = 'Qmagoxruae3xs9kvEUVWLdm5bFsq1XhjEboSaGV7ykUrNH'
