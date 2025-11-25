@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cat": "node -r dotenv/config ./actions/cat.js"
+    "cat": "node -r dotenv/config ./actions/cat.js",
+    "cubo": "node -r dotenv/config ./actions/cubo.js",
+    "add": "node -r dotenv/config ./actions/add.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,8 @@
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
     "axios": "^1.13.2",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "form-data": "^4.0.5",
+    "kubo-rpc-client": "^6.0.2"
   }
 }
