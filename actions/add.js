@@ -20,7 +20,7 @@ const filePath = './public/image.png';
 
 const add = async () => {
   if (!fs.existsSync(filePath)) {
-    console.error('❌ Файл не найден:', filePath);
+    console.error('❌ File not found:', filePath);
     return;
   }
 
@@ -33,7 +33,7 @@ const add = async () => {
 
   const url = `https://${host}:${port}/api/v0/add?pin=true`;
 
-  console.log("🚀 Отправляем файл в:", url);
+  console.log("🚀 Send file to IPFs:", url);
 
   const response = await axios.post(url, form, {
     headers: {
